@@ -26,9 +26,9 @@ const Navbar = () => {
         <ul>
           <li><NavLink to="/">Inicio</NavLink></li>
           <li><NavLink to="/admin/servicios">Usuarios</NavLink></li>
-          <li>Certificados</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>Vacunas</li>
+          <li>Citas</li>
+          <li>Actualizacion de datos</li>
         </ul>
         </div>
       </div>
