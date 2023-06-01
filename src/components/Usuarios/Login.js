@@ -1,10 +1,10 @@
 import React, {useState} from "react";
-//import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { MDBBtn,MDBContainer, MDBCard, MDBCardBody,MDBCheckbox,MDBRow,MDBCol,MDBInput} from 'mdb-react-ui-kit';
 import { login } from "../../API/UsuariosApi";
-import "../css/style.css";
+import estilos from "../css/style.css";
 
 function Login() {
 
@@ -36,7 +36,7 @@ function Login() {
   };
 
   return (
-    <MDBContainer fluid>
+    <MDBContainer fluid className="body">
       <MDBRow className='d-flex justify-content-center align-items-center h-100'>
         <MDBCol col='12'>
           <MDBCard className='bg-white my-5 mx-auto' style={{borderRadius: '1rem', maxWidth: '500px'}}>
