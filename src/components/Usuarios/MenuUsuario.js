@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
         <ul>
           <li><NavLink to="/">Inicio</NavLink></li>
-          <li><NavLink to="/admin/servicios">Usuarios</NavLink></li>
+          <li><NavLink to="/admin/usuarios">Usuarios</NavLink></li>
           <li>Vacunas</li>
           <li>Citas</li>
           <li>Actualizacion de datos</li>

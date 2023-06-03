@@ -1,18 +1,17 @@
 import React from "react";
-import { NavLink } from 'react-router-dom'
 
 function TablaUsuario(props) {
 
-    const {usuarios,onDelete,onView} = props;
+    const {usuarios,onDelete,onView,onCreate} = props;
 
     return(
         <div className="container-xxl flex-grow-1 container-p-y">
-            <h4 className="fw-bold py-3 mb-4"><span className="text-muted fw-light">Servicios de Atención </span></h4>
+            <h4 className="fw-bold py-3 mb-4"><span className="text-muted fw-light">Usuario</span></h4>
             <div>
-                <a className="btn btn-primary"><NavLink to="/admin/createUser"></NavLink>Agregar</a>
+                <a className="btn btn-primary" onClick={()=>{onCreate()}}>Agregar</a>
             </div>
             <br/>
-            <div className="card" id="allCategoria">
+            <div className="card">
                 <h5 className="card-header">Listado de Usuarios</h5>
                     <div className="table-responsive text-nowrap">
                         <table className="table">
@@ -29,7 +28,7 @@ function TablaUsuario(props) {
                             </thead>
                         <tbody className="table-border-bottom-0">
                         {usuarios.map((usuario)=>{
-                            return(<tr key={usuarios._id}>
+                            return(<tr id={usuarios._id}>
                             <td>{usuario.cedula}</td>
                             <td>{usuario.nombre + " " + usuario.apellido }</td>
                             <td>{usuario.correo}</td>

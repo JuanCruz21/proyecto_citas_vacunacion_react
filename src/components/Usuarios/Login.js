@@ -8,7 +8,7 @@ import estilos from "../css/style.css";
 
 function Login() {
 
- // const navegar = useNavigate();
+  const navegar = useNavigate();
   const [usuario,setUsuario] = useState({
     correo : "",
     contrasena : ""
@@ -27,7 +27,9 @@ function Login() {
         if (data == null) {
           alert("Error al ingresar. El usuario o la contraseña son incorrectos")
         } else {
-          console.log(data,usuario);
+          localStorage.setItem("usuarioActivo", JSON.stringify(data));
+          localStorage.setItem("rolUsuario", data.rol);
+          navegar("/")
         }
       })
       .catch((err) => {
