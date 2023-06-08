@@ -1,10 +1,7 @@
 import React,{ useEffect, useState } from "react";
 import MenuUsuario  from './MenuUsuario';
 import TablaUsuarios from './TablaUsuarios';
-import { getListaUsuarios } from '../../API/UsuariosApi'
-import { eliminarUsuario } from '../../API/UsuariosApi'
-import { agregarUsuario } from '../../API/UsuariosApi'
-import { editarUsuario } from '../../API/UsuariosApi'
+import { getListaUsuarios,eliminarUsuario,agregarUsuario,editarUsuario } from '../../API/UsuariosApi'
 import FormUsuario from "./FormUsuario";
 import { useNavigate } from "react-router-dom";
 

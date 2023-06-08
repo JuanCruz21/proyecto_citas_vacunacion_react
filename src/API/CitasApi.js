@@ -3,6 +3,7 @@ const url = "http://localhost:5000/citas/";
 export async function getListaCitas(){
     const res = await fetch(url);
     const data = await res.json();
+    console.log(data);
     return data.Citas;
 }
 
