@@ -13,7 +13,7 @@ function Home(){
             navegar("/login");
         }
     },[navegar,usuarioActivo])
-
+    
     return(
         <MenuUsuario/>
     )
